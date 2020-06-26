@@ -1,15 +1,15 @@
-+BENCHMARK(1000000,MD5(‘A’))
++BENCHMARK(1000000,MD5('A'))
 +SLEEP(5)
 +WAITFOR DELAY '00:00:20'
 +pg_sleep(10)
-+BENCHMARK(1000000,MD5(‘A’))   -- 
-+BENCHMARK(1000000,MD5(‘A’))  /* 
-+BENCHMARK(1000000,MD5(‘A’)))   -- 
-+BENCHMARK(1000000,MD5(‘A’)))  /* 
-+BENCHMARK(1000000,MD5(‘A’))))   -- 
-+BENCHMARK(1000000,MD5(‘A’))))  /* 
-+BENCHMARK(1000000,MD5(‘A’)))))  -- 
-+BENCHMARK(1000000,MD5(‘A’))))) /* 
++BENCHMARK(1000000,MD5('A'))   -- 
++BENCHMARK(1000000,MD5('A'))  /* 
++BENCHMARK(1000000,MD5('A')))   -- 
++BENCHMARK(1000000,MD5('A')))  /* 
++BENCHMARK(1000000,MD5('A'))))   -- 
++BENCHMARK(1000000,MD5('A'))))  /* 
++BENCHMARK(1000000,MD5('A')))))  -- 
++BENCHMARK(1000000,MD5('A'))))) /* 
 +SLEEP(5)   -- 
 +SLEEP(5)  /* 
 +SLEEP(5))   -- 
@@ -34,18 +34,18 @@
 +pg_sleep(10)))  /* 
 +pg_sleep(10))))  -- 
 +pg_sleep(10)))) /* 
-'+BENCHMARK(1000000,MD5(‘A’))+'a
+'+BENCHMARK(1000000,MD5('A'))+'a
 '+SLEEP(5)+'a
 '+WAITFOR DELAY '00:00:20'+'a
 '+pg_sleep(10)+'a
-'+BENCHMARK(1000000,MD5(‘A’))   -- 
-'+BENCHMARK(1000000,MD5(‘A’))  /* 
-'+BENCHMARK(1000000,MD5(‘A’)))   -- 
-'+BENCHMARK(1000000,MD5(‘A’)))  /* 
-'+BENCHMARK(1000000,MD5(‘A’))))   -- 
-'+BENCHMARK(1000000,MD5(‘A’))))  /* 
-'+BENCHMARK(1000000,MD5(‘A’)))))  -- 
-'+BENCHMARK(1000000,MD5(‘A’))))) /* 
+'+BENCHMARK(1000000,MD5('A'))   -- 
+'+BENCHMARK(1000000,MD5('A'))  /* 
+'+BENCHMARK(1000000,MD5('A')))   -- 
+'+BENCHMARK(1000000,MD5('A')))  /* 
+'+BENCHMARK(1000000,MD5('A'))))   -- 
+'+BENCHMARK(1000000,MD5('A'))))  /* 
+'+BENCHMARK(1000000,MD5('A')))))  -- 
+'+BENCHMARK(1000000,MD5('A'))))) /* 
 '+SLEEP(5)   -- 
 '+SLEEP(5)  /* 
 '+SLEEP(5))   -- 
@@ -70,18 +70,18 @@
 '+pg_sleep(10)))  /* 
 '+pg_sleep(10))))  -- 
 '+pg_sleep(10)))) /* 
-(BENCHMARK(1000000,MD5(‘A’)))
+(BENCHMARK(1000000,MD5('A')))
 (SLEEP(5))
 (WAITFOR DELAY '00:00:20')
 (pg_sleep(10))
-(BENCHMARK(1000000,MD5(‘A’)))   -- 
-(BENCHMARK(1000000,MD5(‘A’)))  /* 
-(BENCHMARK(1000000,MD5(‘A’))))   -- 
-(BENCHMARK(1000000,MD5(‘A’))))  /* 
-(BENCHMARK(1000000,MD5(‘A’)))))   -- 
-(BENCHMARK(1000000,MD5(‘A’)))))  /* 
-(BENCHMARK(1000000,MD5(‘A’))))))  -- 
-(BENCHMARK(1000000,MD5(‘A’)))))) /* 
+(BENCHMARK(1000000,MD5('A')))   -- 
+(BENCHMARK(1000000,MD5('A')))  /* 
+(BENCHMARK(1000000,MD5('A'))))   -- 
+(BENCHMARK(1000000,MD5('A'))))  /* 
+(BENCHMARK(1000000,MD5('A')))))   -- 
+(BENCHMARK(1000000,MD5('A')))))  /* 
+(BENCHMARK(1000000,MD5('A'))))))  -- 
+(BENCHMARK(1000000,MD5('A')))))) /* 
 (SLEEP(5))   -- 
 (SLEEP(5))  /* 
 (SLEEP(5)))   -- 
@@ -110,8 +110,8 @@
  ; BEGIN DBMS_LOCK.SLEEP(5); END;; /* 
  ; WAITFOR DELAY '00:00:20';  -- 
  ; WAITFOR DELAY '00:00:20'; /* 
- ; select BENCHMARK(1000000,MD5(‘A’));  -- 
- ; select BENCHMARK(1000000,MD5(‘A’)); /* 
+ ; select BENCHMARK(1000000,MD5('A'));  -- 
+ ; select BENCHMARK(1000000,MD5('A')); /* 
  ; select SLEEP(5);  -- 
  ; select SLEEP(5); /* 
  ; select WAITFOR DELAY '00:00:20';  -- 
@@ -122,8 +122,8 @@
 ) ; BEGIN DBMS_LOCK.SLEEP(5); END;; /* 
 ) ; WAITFOR DELAY '00:00:20';  -- 
 ) ; WAITFOR DELAY '00:00:20'; /* 
-) ; select BENCHMARK(1000000,MD5(‘A’));  -- 
-) ; select BENCHMARK(1000000,MD5(‘A’)); /* 
+) ; select BENCHMARK(1000000,MD5('A'));  -- 
+) ; select BENCHMARK(1000000,MD5('A')); /* 
 ) ; select SLEEP(5);  -- 
 ) ; select SLEEP(5); /* 
 ) ; select WAITFOR DELAY '00:00:20';  -- 
@@ -134,8 +134,8 @@
 )) ; BEGIN DBMS_LOCK.SLEEP(5); END;; /* 
 )) ; WAITFOR DELAY '00:00:20';  -- 
 )) ; WAITFOR DELAY '00:00:20'; /* 
-)) ; select BENCHMARK(1000000,MD5(‘A’));  -- 
-)) ; select BENCHMARK(1000000,MD5(‘A’)); /* 
+)) ; select BENCHMARK(1000000,MD5('A'));  -- 
+)) ; select BENCHMARK(1000000,MD5('A')); /* 
 )) ; select SLEEP(5);  -- 
 )) ; select SLEEP(5); /* 
 )) ; select WAITFOR DELAY '00:00:20';  -- 
@@ -146,8 +146,8 @@
 ))); BEGIN DBMS_LOCK.SLEEP(5); END;; /* 
 ))); WAITFOR DELAY '00:00:20';  -- 
 ))); WAITFOR DELAY '00:00:20'; /* 
-))); select BENCHMARK(1000000,MD5(‘A’));  -- 
-))); select BENCHMARK(1000000,MD5(‘A’)); /* 
+))); select BENCHMARK(1000000,MD5('A'));  -- 
+))); select BENCHMARK(1000000,MD5('A')); /* 
 ))); select SLEEP(5);  -- 
 ))); select SLEEP(5); /* 
 ))); select WAITFOR DELAY '00:00:20';  -- 
@@ -158,8 +158,8 @@
 ' ; BEGIN DBMS_LOCK.SLEEP(5); END;; /* 
 ' ; WAITFOR DELAY '00:00:20';  -- 
 ' ; WAITFOR DELAY '00:00:20'; /* 
-' ; select BENCHMARK(1000000,MD5(‘A’));  -- 
-' ; select BENCHMARK(1000000,MD5(‘A’)); /* 
+' ; select BENCHMARK(1000000,MD5('A'));  -- 
+' ; select BENCHMARK(1000000,MD5('A')); /* 
 ' ; select SLEEP(5);  -- 
 ' ; select SLEEP(5); /* 
 ' ; select WAITFOR DELAY '00:00:20';  -- 
@@ -170,8 +170,8 @@
 ') ; BEGIN DBMS_LOCK.SLEEP(5); END;; /* 
 ') ; WAITFOR DELAY '00:00:20';  -- 
 ') ; WAITFOR DELAY '00:00:20'; /* 
-') ; select BENCHMARK(1000000,MD5(‘A’));  -- 
-') ; select BENCHMARK(1000000,MD5(‘A’)); /* 
+') ; select BENCHMARK(1000000,MD5('A'));  -- 
+') ; select BENCHMARK(1000000,MD5('A')); /* 
 ') ; select SLEEP(5);  -- 
 ') ; select SLEEP(5); /* 
 ') ; select WAITFOR DELAY '00:00:20';  -- 
@@ -182,8 +182,8 @@
 ')) ; BEGIN DBMS_LOCK.SLEEP(5); END;; /* 
 ')) ; WAITFOR DELAY '00:00:20';  -- 
 ')) ; WAITFOR DELAY '00:00:20'; /* 
-')) ; select BENCHMARK(1000000,MD5(‘A’));  -- 
-')) ; select BENCHMARK(1000000,MD5(‘A’)); /* 
+')) ; select BENCHMARK(1000000,MD5('A'));  -- 
+')) ; select BENCHMARK(1000000,MD5('A')); /* 
 ')) ; select SLEEP(5);  -- 
 ')) ; select SLEEP(5); /* 
 ')) ; select WAITFOR DELAY '00:00:20';  -- 
@@ -194,8 +194,8 @@
 '))); BEGIN DBMS_LOCK.SLEEP(5); END;; /* 
 '))); WAITFOR DELAY '00:00:20';  -- 
 '))); WAITFOR DELAY '00:00:20'; /* 
-'))); select BENCHMARK(1000000,MD5(‘A’));  -- 
-'))); select BENCHMARK(1000000,MD5(‘A’)); /* 
+'))); select BENCHMARK(1000000,MD5('A'));  -- 
+'))); select BENCHMARK(1000000,MD5('A')); /* 
 '))); select SLEEP(5);  -- 
 '))); select SLEEP(5); /* 
 '))); select WAITFOR DELAY '00:00:20';  -- 

