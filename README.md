@@ -1,3 +1,5 @@
 # SQLi_timebased_list_builder
 
-moved here: https://github.com/sorokinpf/cth_wordlists
+# THIS REPO IS DEPRECATED
+
+Moved here: https://github.com/sorokinpf/cth_wordlists
